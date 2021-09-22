@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        barColorWhenSelected="#5D4037"
+        icon="@mipmap/ic_favorites"
+        id="@+id/tab1"
+        title="Favorites"/>
+    <tab
+        barColorWhenSelected="#f44336"
+        icon="@mipmap/ic_nearby"
+        id="@+id/tab2"
+        title="Nearby"/>
+    <tab
+        barColorWhenSelected="#6A1B9A"
+        icon="@mipmap/ic_friends"
+        id="@+id/tab3"
+        title="Friends"/>
+    <tab
+        barColorWhenSelected="#304FFE"
+        icon="@mipmap/ic_recents"
+        id="@+id/tab4"
+        title="Recent"/>
+<!--    <tab-->
+<!--        barColorWhenSelected="#009688"-->
+<!--        icon="@mipmap/ic_recents"-->
+<!--        id="@+id/tab5"-->
+<!--        title="restaurants"/>-->
+</tabs>
