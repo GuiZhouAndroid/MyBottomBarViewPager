@@ -5,14 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </androidx.core.widget.NestedScrollView>
+
         <!-- app:
              bb_behavior————(1)动画移位item：shifting、(2)默认不移位：underNavbar、(3)滑动隐藏 shy
              点击时Item时激活的图标字体颜色：bb_activeTabColor

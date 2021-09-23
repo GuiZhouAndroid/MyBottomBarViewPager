@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private BottomBar bottomBar;
 
-//    private ViewPager viewPager;
+    private ViewPager viewPager;
 
     private List<Fragment> fragmentList;
 
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bottomBar = (BottomBar) findViewById(R.id.bottomBar);
-//        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
         initViewPager();
 
         bottomBar.getTabWithId(R.id.tab3).setBadgeCount(5);
@@ -100,25 +100,25 @@ public class MainActivity extends AppCompatActivity {
         fragmentList.add(new TwoFragment());
         fragmentList.add(new ThreeFragment());
         fragmentList.add(new FourFragment());
-//        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager(), fragmentList));
-//        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-//            @Override
-//            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-//
-//            }
-//
-//            //选择新页面时调用
-//            @Override
-//            public void onPageSelected(int position) {
-//                bottomBar.selectTabAtPosition(position, true);
-//            }
-//
-//            //当滚动状态改变时调用，用于发现用户何时开始拖动
-//            @Override
-//            public void onPageScrollStateChanged(int state) {
-//
-//            }
-//        });
+        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager(), fragmentList));
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            //选择新页面时调用
+            @Override
+            public void onPageSelected(int position) {
+                bottomBar.selectTabAtPosition(position, true);
+            }
+
+            //当滚动状态改变时调用，用于发现用户何时开始拖动
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
 
     }
 }
