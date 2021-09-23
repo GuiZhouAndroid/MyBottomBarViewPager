@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tabs>
     <tab
-        barColorWhenSelected="#5D4037"
+        barColorWhenSelected="#009688"
+
         icon="@mipmap/ic_favorites"
         id="@+id/tab1"
-        title="Favorites"/>
+        title="首页"/>
     <tab
         barColorWhenSelected="#f44336"
         icon="@mipmap/ic_nearby"
         id="@+id/tab2"
-        title="Nearby"/>
+        title="大厅"/>
     <tab
         barColorWhenSelected="#6A1B9A"
-        icon="@mipmap/ic_friends"
+        icon="@mipmap/ic_recents"
         id="@+id/tab3"
         title="Friends"/>
     <tab
         barColorWhenSelected="#304FFE"
-        icon="@mipmap/ic_recents"
+        icon="@mipmap/ic_friends"
         id="@+id/tab4"
-        title="Recent"/>
+        title="我的"/>
 <!--    <tab-->
-<!--        barColorWhenSelected="#009688"-->
+<!--        barColorWhenSelected="#5D4037"-->
 <!--        icon="@mipmap/ic_recents"-->
 <!--        id="@+id/tab5"-->
 <!--        title="restaurants"/>-->

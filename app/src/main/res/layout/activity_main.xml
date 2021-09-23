@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.core.widget.NestedScrollView>
+        <!-- app:
+             bb_behavior————(1)动画移位item：shifting、(2)默认不移位：underNavbar、(3)滑动隐藏 shy
+             点击时Item时激活的图标字体颜色：bb_activeTabColor
+             未点击时初始化其他Item激活的图标字体颜色：bb_inActiveTabColor
+             引入assets字体文件：bb_titleTypeFace，例如：app:bb_titleTypeFace="fonts/GreatVibes-Regular.otf"
+             点击时Item时的透明度0-1：bb_activeTabAlpha
+             未点击时初始化其他Item透明度0-1：bb_inActiveTabColor
+             引入tab的字体style样式：bb_titleTextAppearance
+        -->
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            app:bb_behavior="shy"
+            app:bb_inActiveTabColor="@color/white"
+            app:bb_activeTabColor="#FFEB3B"
+            app:bb_activeTabAlpha="1"
+            app:bb_tabXmlResource="@xml/bottombar_color_activity" />
 
-    <com.roughike.bottombar.BottomBar
-        android:id="@+id/bottomBar"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
-        app:bb_behavior="shifting"
-        app:bb_tabXmlResource="@xml/bottombar_color_activity" />
-
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottomBar"
-        android:gravity="center"
-        android:text="text"/>
-</RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

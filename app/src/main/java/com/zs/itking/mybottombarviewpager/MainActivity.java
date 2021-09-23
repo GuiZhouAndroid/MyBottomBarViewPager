@@ -23,82 +23,72 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MainFragment mMainFragment;
-    private TwoFragment twoFragment;
-    private ThreeFragment threeFragment;
-    private FourFragment fourFragment;
-
     private BottomBar bottomBar;
 
-    private ViewPager viewPager;
+//    private ViewPager viewPager;
 
     private List<Fragment> fragmentList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bottomBar = (BottomBar) findViewById(R.id.bottomBar);
-        viewPager = (ViewPager) findViewById(R.id.viewPager);
+//        viewPager = (ViewPager) findViewById(R.id.viewPager);
         initViewPager();
 
+        bottomBar.getTabWithId(R.id.tab3).setBadgeCount(5);
+        //选定的BottomBarTab更改时被触发——当前处于Item时点击其它Item
         bottomBar.setOnTabSelectListener(new OnTabSelectListener() {
             @SuppressLint("NonConstantResourceId")
             @Override
             public void onTabSelected(@IdRes int tabId) {
                 switch (tabId) {
                     case R.id.tab1:
-                        viewPager.setCurrentItem(0);
+//                        viewPager.setCurrentItem(0);
                         Toast.makeText(MainActivity.this, "tab1", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.tab2:
-                        viewPager.setCurrentItem(1);
+//                        viewPager.setCurrentItem(1);
                         Toast.makeText(MainActivity.this, "tab2", Toast.LENGTH_SHORT).show();
 
                         break;
                     case R.id.tab3:
-                        viewPager.setCurrentItem(2);
+                        //                      viewPager.setCurrentItem(2);
                         Toast.makeText(MainActivity.this, "tab3", Toast.LENGTH_SHORT).show();
-
+                        bottomBar.getTabWithId(R.id.tab3).removeBadge();
                         break;
                     case R.id.tab4:
-                        viewPager.setCurrentItem(3);
+                        //                      viewPager.setCurrentItem(3);
                         Toast.makeText(MainActivity.this, "tab4", Toast.LENGTH_SHORT).show();
                         break;
-//                    case R.id.tab5:
-//                        Toast.makeText(MainActivity.this, "tab5", Toast.LENGTH_SHORT).show();
-//                        break;
                 }
             }
         });
 
-        //当前的tab是tab1，而你又点击了tab1，会调用这个方法
-
+        // 当前选择的BottomBarTab被单击时触发——当前处于Item时再次点击当前Item
         bottomBar.setOnTabReselectListener(new OnTabReselectListener() {
             @SuppressLint("NonConstantResourceId")
             @Override
             public void onTabReSelected(@IdRes int tabId) {
                 switch (tabId) {
                     case R.id.tab1:
-                        viewPager.setCurrentItem(0);
-                        Toast.makeText(MainActivity.this, "tab1", Toast.LENGTH_SHORT).show();
+                        //           viewPager.setCurrentItem(0);
+                        Toast.makeText(MainActivity.this, "再次点击了tab1", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.tab2:
-                        viewPager.setCurrentItem(1);
-                        Toast.makeText(MainActivity.this, "tab2", Toast.LENGTH_SHORT).show();
+                        //           viewPager.setCurrentItem(1);
+                        Toast.makeText(MainActivity.this, "再次点击了tab2", Toast.LENGTH_SHORT).show();
 
                         break;
                     case R.id.tab3:
-                        viewPager.setCurrentItem(2);
-                        Toast.makeText(MainActivity.this, "tab3", Toast.LENGTH_SHORT).show();
-
+                        //       viewPager.setCurrentItem(2);
+                        Toast.makeText(MainActivity.this, "再次点击了tab3", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.tab4:
-                        viewPager.setCurrentItem(3);
-                        Toast.makeText(MainActivity.this, "tab4", Toast.LENGTH_SHORT).show();
+                        //        viewPager.setCurrentItem(3);
+                        Toast.makeText(MainActivity.this, "再次点击了tab4", Toast.LENGTH_SHORT).show();
                         break;
-//                    case R.id.tab5:
-//                        Toast.makeText(MainActivity.this, "tab5", Toast.LENGTH_SHORT).show();
-//                        break;
                 }
             }
         });
@@ -110,23 +100,25 @@ public class MainActivity extends AppCompatActivity {
         fragmentList.add(new TwoFragment());
         fragmentList.add(new ThreeFragment());
         fragmentList.add(new FourFragment());
-        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager(), fragmentList));
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                bottomBar.selectTabAtPosition(position, true);
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
+//        viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager(), fragmentList));
+//        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+//            @Override
+//            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+//
+//            }
+//
+//            //选择新页面时调用
+//            @Override
+//            public void onPageSelected(int position) {
+//                bottomBar.selectTabAtPosition(position, true);
+//            }
+//
+//            //当滚动状态改变时调用，用于发现用户何时开始拖动
+//            @Override
+//            public void onPageScrollStateChanged(int state) {
+//
+//            }
+//        });
 
     }
 }

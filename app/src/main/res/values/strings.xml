@@ -1,3 +1,342 @@
 <resources>
     <string name="app_name">MyBottomBarViewPager</string>
+    <string name="content">
+
+切换旧版
+编辑资料
+电竞丶小松哥
+
+码龄4年
+
+
+写什么亮眼的内容，才能吸引帅气你呢？
+
+11,919
+被访问量
+68
+原创文章
+23,580
+作者排名
+241
+粉丝数量
+毕业院校
+六盘水师范学院
+目前就职
+六盘水师范学院
+于
+2017-06-04
+加入CSDN
+
+740
+分
+获得成就
+获得81次点赞
+内容获得44次评论
+获得102次收藏
+入选《移动开发领域内容榜》第
+8
+名
+荣誉勋章
+
+
+
+
+
+
+
+所有勋章
+兴趣领域
+#Android
+#Java#面试#Android Studio#数据结构#gradle
+TA的专栏
+
+Maven笔记
+6篇
+
+Linux笔记
+5篇
+
+其它笔记
+4篇
+
+笔记
+
+SVN笔记
+5篇
+
+Gradle笔记
+1篇
+
+Git/Github笔记
+9篇
+
+Java笔记
+2篇
+
+MySQL笔记
+2篇
+
+阿里云笔记
+4篇
+
+Tomcat笔记
+1篇
+
+JavaWeb笔记
+2篇
+
+Spring笔记
+5篇
+
+Mybatis笔记
+
+AS笔记
+22篇
+展开
+最近
+文章·
+68
+资源·
+3
+问答·
+0
+课程·
+0
+帖子·
+2
+收藏
+关注/订阅
+搜TA的内容
+
+
+win10
+
+0内容
+
+0关注
+最近更新 11 天前
+
+Java
+
+2内容
+
+0关注
+展开
+
+最近更新 13 天前
+
+Bmob
+
+3内容
+
+0关注
+展开
+
+最近更新 16 天前
+
+数据库
+
+4内容
+
+0关注
+展开
+
+最近更新 28 天前
+
+JavaWeb
+
+51内容
+
+0关注
+展开
+
+最近更新 昨天
+
+HTTP+HTTPS
+
+2内容
+
+0关注
+展开
+
+最近更新 1 月前
+
+Android
+
+85内容
+
+0关注
+收起
+
+最近更新 昨天
+博客
+Android开发常用的热门的第三方库（网络请求、banner轮播、tablayout、动画、进度条、视频播放、弹幕等）
+博客
+TabLayout+ViewPager+Fragment实现切页展示
+博客
+第三方开源库：BottomBar 底部导航栏
+博客
+Android中实现底部弹出菜单栏
+博客
+Android人脸识别--基于虹软免费SDK
+博客
+Android开发实现人脸识别
+博客
+手把手教你 Android 人脸识别登录！ | 原力计划
+博客
+Android：okhttp发送请求并且添加token至header头（post+get）
+博客
+巧用第三方快速开发Android App 热门第三方SDK及框架
+博客
+【Android】 使用okhttp实现注册登录功能（与服务器端）
+博客
+Android OkHttp3简介和使用详解
+博客
+Android OkHttp完全解析 是时候来了解OkHttp了
+博客
+@Table 注解详解
+博客
+Android学习别“走弯路”，Android开发手册
+博客
+Android Studio混淆模板及常用第三方混淆(看了都说好)
+博客
+Android客户端实现注册/登录详解（一）
+博客
+Android之人脸识别
+博客
+Android端身份证识别
+博客
+# 开源商店项目Android+Java后端(Springboot)
+博客
+仿Boss直聘我的界面滑动效果
+博客
+Android 腾讯开放平台--QQ开放平台 的QQ登录,根据此博客，集成即可
+博客
+通过QQ号码获取QQ头像、昵称以及空间头像
+博客
+Android Studio打包apk详细教程
+博客
+Android实现自由单选、复选按钮效果+样式美化
+博客
+Android实例开发中登录注册界面的框架实现（android studio）
+博客
+Android仿QQ登录界面示例，实现登录、注册功能。
+博客
+android与javascript交互调用
+博客
+Android Toolbar的使用详解
+博客
+带阻尼回弹效果的RecyclerView
+博客
+Android自定义ScrollView实现阻尼回弹效果
+博客
+Android 带阻尼回弹效果的ScorllView
+博客
+Toolbar的详细介绍和自定义Toolbar
+博客
+Android自定义View实现炫酷的主题切换动画(仿酷安客户端)
+博客
+我的Android开发之旅（一）：BaseActivity的浅入之简单封装 Toolbar
+博客
+打造自己的Android聊天软件（socket篇）
+博客
+Android即时通讯--仿QQ即时聊天：（一）初识Socket
+博客
+Android即时聊天系统设计
+博客
+短信验证（手机号注册，绑定手机号获取验证码）
+博客
+Android短信验证（手机号注册，绑定手机号获取验证码）实例
+博客
+Android 实现手机号短信验证码
+博客
+Android Studio实现一个点餐系统
+博客
+大学项目总结（一）——基于Android的智能点餐系统
+博客
+安卓简单通用的基类（BaseActivity）的封装
+博客
+android安卓源码海量项目合集打包-1
+博客
+Android适配 - 实现4.0以后的导航栏菜单键
+博客
+（AS笔记）Android全透明沉浸式主题样式——全屏沉浸隐藏底部导航栏
+博客
+（AS笔记）Android全透明沉浸式主题样式——代码篇
+博客
+Android WebSocket实现即时通讯功能
+博客
+Gson的反射解析机制详解(1)
+博客
+Android JSON原生解析的几种思路和GSON的使用方法
+博客
+Android的GSON数据解析
+博客
+Gson详解(一）
+博客
+Android静态变量的生命周期
+博客
+Gson基本用法
+博客
+Android如何判断app是否是每日第一次登录
+博客
+Android实现QQ第三方登录
+博客
+Android 登录判断器，登录成功后帮你准确跳转到目标activity
+博客
+Android Transition（Android过渡动画）
+博客
+Android 启动页过渡动画效果实现（一）
+博客
+android studio 启动页的视频效果
+博客
+Android 实现引导页视频播放效果
+博客
+Android开发-Android应用中启动时引导页的实现
+博客
+Android-ObservableScrollView(一)
+博客
+Android Context完全解析，你所不知道的Context的各种细节
+博客
+Android中ViewPager+Fragment取消(禁止)预加载延迟加载(懒加载)问题解决方案
+博客
+Android应用实现QQ授权登录
+博客
+Android 详细的QQ第三方登录
+博客
+Android 沉浸式状态栏完美解决方案
+博客
+Android 沉浸式状态栏显示PopupWindow全屏效果、是WIFI还是4G
+博客
+Android PupopWindow适配全面屏 全屏显示覆盖状态栏 简单实用只需两步
+博客
+Manifest merger failed with multiple errors, see logs问题处理
+博客
+浅谈 MVP in Android
+博客
+编译时注解Butterknife源码解析之深入篇（雷惊风）
+博客
+Android中Activity和AppcompatActivity的区别(详细解析)
+博客
+干货| 外卖点餐系统（App及后台）
+博客
+基于Android的手机订餐系统设计与实现（一）
+博客
+Android 6.0 运行时权限管理最佳实践
+博客
+Android开源项目--分类汇总
+博客
+compileSdkVersion, minSdkVersion 和 targetSdkVersion,傻傻分不清楚
+博客
+Android 屏幕适配方案
+博客
+Android 调用系统相册、相机实现头像（图片）裁剪并选取的功能
+博客
+Android打造圆形相机并实现人脸识别（三）
+博客
+Android 短信验证 SDK 接入（Mob SMSSDK）
+博客
+APP和服务端-架构设计(二)
+博客
+    </string>
 </resources>

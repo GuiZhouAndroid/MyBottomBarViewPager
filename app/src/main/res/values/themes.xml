@@ -13,4 +13,9 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <!-- 底部导航BottomBar样式 -->
+    <style name="BottomBarTitleStyle">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textStyle">bold</item>
+    </style>
 </resources>
